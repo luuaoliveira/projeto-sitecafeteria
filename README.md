@@ -1,6 +1,8 @@
 # projeto-sitecafeteria
 projeto site cafeteria 
 
+![alt text](image.png)
+
 Feito com:
 
 HTML
