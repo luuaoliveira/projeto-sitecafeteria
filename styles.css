@@ -179,27 +179,77 @@ section {
     padding: 1rem 0;
 
 }
-
-.modal {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    gap: 20px;
-    z-index: 4;
-    position: fixed;
-    top: 50%;
-    left: -30%;
-    transform: translate(-50%, -50%);
-    transition: left 1s linear;
-
+.menu .title {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
 }
 
-.mascara-modal {
-    visibility: hidden;
-    z-index: 3;
-    position: fixed;
-    inset: 0;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+.menu .title span {
+    color: var(--main-color);
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;}
+
+.menu .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+}
+
+.menu .box-container .box a {
+    background-color: var(--main-color);
+    cursor: pointer;
+    margin-top: 2rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    transition: 0.2s linear;
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+}
+
+.menu .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+    color:#fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.address .title {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.address .title span {
+    color: var(--main-color);
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
 }
